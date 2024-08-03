@@ -12,7 +12,7 @@ public class SingletonPerson extends Person {
     }
 
 
-    // Best solution
+    // Best solution, lazy with no concurrency problem
     public static SingletonPerson getInstance() {
         return InnerClass.PROJECT_MANAGER;
     }
@@ -22,14 +22,43 @@ public class SingletonPerson extends Person {
     }
 
 
-    // Efficient but hard to develop
-    /*private static volatile SingletonPerson PROJECT_MANAGER;
+    // Lazy Instantiation with concurrency problem handled, Efficient but hard to develop
+     /*private static volatile SingletonPerson PROJECT_MANAGER;
 
     public static SingletonPerson getInstance() {
         if (PROJECT_MANAGER == null) {
             synchronized (SingletonPerson.class) {
                 if (PROJECT_MANAGER == null) PROJECT_MANAGER = new SingletonPerson();
             }
+        }
+        return PROJECT_MANAGER;
+    }*/
+
+
+    // Eager Instantiation, not so efficient
+/*    private static SingletonPerson PROJECT_MANAGER = new SingletonPerson();
+
+    public static SingletonPerson getInstance() {
+        return PROJECT_MANAGER;
+    }*/
+
+
+    // Classic lazy Instantiation, with concurrent problem
+/*    private static SingletonPerson PROJECT_MANAGER;
+
+    public static SingletonPerson getInstance() {
+        if (PROJECT_MANAGER == null) {
+            PROJECT_MANAGER = new SingletonPerson();
+        }
+        return PROJECT_MANAGER;
+    }*/
+
+    // Synchronized lazy instantiation, not cost-efficient
+/*        private static SingletonPerson PROJECT_MANAGER;
+
+    public static synchronized SingletonPerson getInstance() {
+        if (PROJECT_MANAGER == null) {
+            PROJECT_MANAGER = new SingletonPerson();
         }
         return PROJECT_MANAGER;
     }*/
