@@ -1,18 +1,15 @@
 package com.satsumaimo.bean;
 
-public class Person {
+public abstract class Person {
+    protected static int instanceCreated = 1;
     protected int id;
     protected String name;
     protected Gender gender;
     protected int age;
     protected Mbti mbti;
 
-    protected Person(int id, String name, Gender gender, int age, Mbti mbti) {
-        this.id = id;
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.mbti = mbti;
+    public int getId() {
+        return id;
     }
 
     public String getName() {
