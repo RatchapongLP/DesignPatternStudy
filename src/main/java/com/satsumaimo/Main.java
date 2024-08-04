@@ -2,7 +2,6 @@ package com.satsumaimo;
 
 import com.satsumaimo.bean.Gender;
 import com.satsumaimo.bean.Mbti;
-import com.satsumaimo.creational.BuilderLombokPerson;
 import com.satsumaimo.creational.BuilderPerson;
 import com.satsumaimo.creational.PrototypePerson;
 import com.satsumaimo.creational.SingletonPerson;

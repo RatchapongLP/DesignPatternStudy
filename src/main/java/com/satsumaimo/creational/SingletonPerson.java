@@ -3,7 +3,6 @@ package com.satsumaimo.creational;
 import com.satsumaimo.bean.BasePerson;
 import com.satsumaimo.bean.Gender;
 import com.satsumaimo.bean.Mbti;
-import com.satsumaimo.bean.SimplePerson;
 
 public class SingletonPerson extends BasePerson {
     private SingletonPerson() {

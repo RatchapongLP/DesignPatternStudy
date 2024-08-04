@@ -2,7 +2,6 @@ package com.satsumaimo.creational;
 
 import com.satsumaimo.bean.Gender;
 import com.satsumaimo.bean.Mbti;
-import com.satsumaimo.bean.Person;
 import com.satsumaimo.bean.SimplePerson;
 import com.satsumaimo.util.PersonPartnerUtil;
 
