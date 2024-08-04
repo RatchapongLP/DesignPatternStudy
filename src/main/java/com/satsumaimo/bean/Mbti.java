@@ -26,8 +26,8 @@ public enum Mbti {
         String thisType = this.name();
         char[] matchedType = {getOppositeLetter(thisType.charAt(0))
                 , thisType.charAt(1)
-                , getOppositeLetter(thisType.charAt(2))
-                , thisType.charAt(3)};
+                , thisType.charAt(2)
+                , getOppositeLetter(thisType.charAt(3))};
         return valueOf(String.valueOf(matchedType));
     }
 
