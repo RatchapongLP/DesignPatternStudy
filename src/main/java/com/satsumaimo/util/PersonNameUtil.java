@@ -1,7 +1,6 @@
 package com.satsumaimo.util;
 
 import com.satsumaimo.bean.Gender;
-import com.satsumaimo.bean.Person;
 import com.satsumaimo.dao.PersonNameDao;
 
 public class PersonNameUtil {
