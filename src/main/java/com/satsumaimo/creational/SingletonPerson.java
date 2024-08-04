@@ -1,10 +1,11 @@
-package com.satsumaimo.creator;
+package com.satsumaimo.creational;
 
+import com.satsumaimo.bean.BasePerson;
 import com.satsumaimo.bean.Gender;
 import com.satsumaimo.bean.Mbti;
-import com.satsumaimo.bean.Person;
+import com.satsumaimo.bean.SimplePerson;
 
-public class SingletonPerson extends Person {
+public class SingletonPerson extends BasePerson {
     private SingletonPerson() {
         this.id = instanceCreated;
         this.name = "Shiraishi Kuranosuke";
@@ -46,7 +47,7 @@ public class SingletonPerson extends Person {
     }*/
 
 
-    // Classic lazy Instantiation, with concurrent problem
+    // Classic lazy Instantiation, with concurrent problems
 /*    private static SingletonPerson ADAM;
 
     public static SingletonPerson getInstance() {
@@ -65,4 +66,15 @@ public class SingletonPerson extends Person {
         }
         return ADAM;
     }*/
+
+    @Override
+    public String toString() {
+        return "SingletonPerson {" +
+                "\n\tid = " + id +
+                ",\n\tname = '" + name + '\'' +
+                ",\n\tgender = " + gender +
+                ",\n\tage = " + age +
+                ",\n\tmbti = " + mbti +
+                "\n}";
+    }
 }
