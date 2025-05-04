@@ -1,6 +1,6 @@
-package com.satsumaimo.client;
+package com.satsumaimo.creational.factory.client;
 
-import com.satsumaimo.creational.VehicleFactory;
+import com.satsumaimo.creational.factory.developer.VehicleFactory;
 import com.satsumaimo.model.Vehicle;
 
 public class VehicleTestService {

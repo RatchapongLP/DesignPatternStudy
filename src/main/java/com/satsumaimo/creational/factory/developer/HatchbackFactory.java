@@ -1,4 +1,4 @@
-package com.satsumaimo.creational;
+package com.satsumaimo.creational.factory.developer;
 
 import com.satsumaimo.model.Vehicle;
 import com.satsumaimo.product.Hatchback;

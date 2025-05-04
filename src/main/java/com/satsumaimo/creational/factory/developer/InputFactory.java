@@ -1,4 +1,4 @@
-package com.satsumaimo.creational;
+package com.satsumaimo.creational.factory.developer;
 
 public class InputFactory {
     // This is the only changes.

@@ -1,4 +1,4 @@
-package com.satsumaimo.structural.flyweight;
+package com.satsumaimo.structural.flyweight.developer;
 
 import java.util.HashMap;
 import java.util.Map;

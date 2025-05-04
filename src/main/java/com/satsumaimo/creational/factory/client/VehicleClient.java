@@ -1,7 +1,7 @@
-package com.satsumaimo.client;
+package com.satsumaimo.creational.factory.client;
 
-import com.satsumaimo.creational.InputFactory;
-import com.satsumaimo.creational.VehicleFactory;
+import com.satsumaimo.creational.factory.developer.InputFactory;
+import com.satsumaimo.creational.factory.developer.VehicleFactory;
 
 public class VehicleClient {
     public static void main(String[] args) {
