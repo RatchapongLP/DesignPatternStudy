@@ -12,7 +12,6 @@ public class CharacterFormat {
     private final boolean italic;
 
     public CharacterFormat(String font, int size, boolean bold, boolean italic) {
-        System.out.println("A new " + CharacterFormat.class.getSimpleName() + " instance is created.");
         this.font = font;
         this.size = size;
         this.bold = bold;
