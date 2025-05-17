@@ -1,4 +1,4 @@
-package com.satsumaimo.structural.bridge.model;
+package com.satsumaimo.structural.bridge.cleandesign.model;
 
 public class MediumDashedLine implements Outline {
     @Override
