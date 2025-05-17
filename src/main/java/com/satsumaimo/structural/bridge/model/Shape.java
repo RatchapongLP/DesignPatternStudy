@@ -1,20 +1,29 @@
 package com.satsumaimo.structural.bridge.model;
 
 /*
-When:
 
-                   ----Shape---
-                  /            \
-         Rectangle              Circle
-        /         \            /      \
-BlueRectangle  RedRectangle BlueCircle RedCircle
+When orthogonal hierarchies are entangled:
 
-Refactor to:
+                             ------------------------Shape-------------------------
+                            /                                                      \
+                      Square                                                       Triangle
+                     /      \                                                      /      \
+MediumDashedLineSquare      ThickContinuousLineSquare       MediumDashedLineTriangle      ThickContinuousLineTriangle
 
-          ----Shape---                        Color
-         /            \                       /   \
-Rectangle(Color)   Circle(Color)           Blue   Red
-        */
+Refactor to Bridge pattern:
+
+          ----Shape---                                      Outline
+         /            \                                      /   \
+Square(Outline)   Triangle(Outline)           MediumDashedLine   ThickContinuousLine
+
+Shape = Abstraction
+Square = RefinedAbstraction
+Outline = Implementor
+MediumDashedLine = ConcreteImplementor
+
+This promotes composition rather than inheritance.
+
+*/
 
 public abstract class Shape {
     protected Outline outline;
