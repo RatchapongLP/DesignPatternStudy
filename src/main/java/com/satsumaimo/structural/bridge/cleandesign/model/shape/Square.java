@@ -1,6 +1,8 @@
-package com.satsumaimo.structural.bridge.cleandesign.model;
+package com.satsumaimo.structural.bridge.cleandesign.model.shape;
 
-public class Square extends Shape{
+import com.satsumaimo.structural.bridge.cleandesign.model.outline.Outline;
+
+public class Square extends Shape {
     private static final int SQUARE_CORNERS = 4;
     public Square(Outline outline) {
         super(outline);

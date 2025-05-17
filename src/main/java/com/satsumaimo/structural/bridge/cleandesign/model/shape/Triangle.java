@@ -1,6 +1,8 @@
-package com.satsumaimo.structural.bridge.cleandesign.model;
+package com.satsumaimo.structural.bridge.cleandesign.model.shape;
 
-public class Triangle extends Shape{
+import com.satsumaimo.structural.bridge.cleandesign.model.outline.Outline;
+
+public class Triangle extends Shape {
     private static final int TRIANGLE_CORNERS = 4;
 
     public Triangle(Outline outline) {

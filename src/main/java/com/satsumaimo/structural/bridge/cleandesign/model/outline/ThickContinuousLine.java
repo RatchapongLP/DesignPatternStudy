@@ -1,4 +1,4 @@
-package com.satsumaimo.structural.bridge.cleandesign.model;
+package com.satsumaimo.structural.bridge.cleandesign.model.outline;
 
 public class ThickContinuousLine implements Outline {
     @Override
