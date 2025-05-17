@@ -5,7 +5,6 @@ import com.satsumaimo.structural.bridge.cleandesign.model.Shape;
 import com.satsumaimo.structural.bridge.cleandesign.model.Square;
 import com.satsumaimo.structural.bridge.cleandesign.model.ThickContinuousLine;
 import com.satsumaimo.structural.bridge.cleandesign.model.Triangle;
-import com.satsumaimo.structural.bridge.model.*;
 
 public class Main {
     public static void main(String[] args) {
