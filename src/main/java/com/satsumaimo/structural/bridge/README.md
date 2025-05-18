@@ -19,9 +19,9 @@ composing orthogonal (dissociated, decoupled) hierarchies.
 In this case, two orthogonal hierarchies are formed (refer to `com.satsumaimo.structural.bridge.cleandesign.model`):
 
 ```
-          ----Shape----                                      Outline
-         /             \                                      /   \
-Square(Outline)    Triangle(Outline)           MediumDashedLine   ThickContinuousLine
+          ----Shape----                                        Outline
+         /             \                                      /       \
+Square(Outline)    Triangle(Outline)           MediumDashedLine       ThickContinuousLine
 ```
 Consequently, rather than creating various subclasses of each `Shape` to accommodate multiple types of line,
 we make those `Shape`'s communicate to `Outline` interface type.
