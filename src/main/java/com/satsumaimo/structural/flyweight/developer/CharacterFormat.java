@@ -23,7 +23,7 @@ public class CharacterFormat {
         if (bold) style += "Bold ";
         if (italic) style += "Italic";
         if (style.isEmpty()) style = "Regular";
-        return font + ", " + size + "pt, " + style.trim();
+        return "{ font: " + font + ", size: " + size + "pt, style: " + style.trim() + " }";
     }
 
     // equals() and hashCode() are important for map keys in the factory
