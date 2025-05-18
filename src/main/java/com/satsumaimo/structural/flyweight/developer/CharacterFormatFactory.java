@@ -32,4 +32,11 @@ public class CharacterFormatFactory {
     public int getFormatsSize() {
         return formats.size();
     }
+
+    public String getFormatsString() {
+//        StringBuffer stringBuffer = new StringBuffer();
+//        formats.forEach((k, v) -> stringBuffer.append("(").append(k).append(", ").append(v).append(")"));
+//        return stringBuffer.toString();
+        return formats.toString();
+    }
 }
