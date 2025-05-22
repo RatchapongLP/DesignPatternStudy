@@ -32,6 +32,19 @@ public class TextEditor {
         // Expected = 2 shared object, but might be more!
         System.out.println("formatFactory.getFormatsSize() = " + formatFactory.getFormatsSize());
         System.out.println("formatFactory.getFormatsString() = " + formatFactory.getFormatsString());
+
+        try {
+            // This returns only public fields of the class or its supertype.
+            // Will throw NoSuchFieldException
+//            Field formats = CharacterFormatFactory.class.getField("formats");
+
+            // Use this instead
+            Field formats = CharacterFormatFactory.class.getDeclaredField("formats");
+            formats.setAccessible(true);
+            System.out.println("formats = " + formats.get(formatFactory));
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private static void work(int threadNumber) {
