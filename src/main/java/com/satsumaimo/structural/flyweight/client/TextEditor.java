@@ -4,6 +4,7 @@ import com.satsumaimo.structural.flyweight.developer.Character;
 import com.satsumaimo.structural.flyweight.developer.CharacterFormat;
 import com.satsumaimo.structural.flyweight.developer.CharacterFormatFactory;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
